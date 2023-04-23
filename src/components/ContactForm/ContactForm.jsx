@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import propTypes from 'prop-types';
 import styles from './ContactForm.module.css';
 import stylesApp from '../../components/App.module.css';
 
