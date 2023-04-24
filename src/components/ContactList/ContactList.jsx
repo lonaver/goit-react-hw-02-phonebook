@@ -12,7 +12,7 @@ class ContactList extends Component {
           <li className={styles.item_contact} key={index}>
             <div className={styles.text_contact}>
               <span>{name} </span>
-              <span>{number}</span>
+              <span className={styles.accent_text}>{number}</span>
             </div>
             <button
               type="button"

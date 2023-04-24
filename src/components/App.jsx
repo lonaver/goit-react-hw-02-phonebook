@@ -56,10 +56,12 @@ class App extends Component {
         <ContactForm onSubmit={this.AddContact}></ContactForm>
         <h2>Contacts</h2>
         <Filter value={filter} onChange={this.changeFilter}></Filter>
-        <ContactList
-          contacts={visibleContacts}
-          handleDelete={this.deleteContact}
-        ></ContactList>
+        {contacts.length > 0 && (
+          <ContactList
+            contacts={visibleContacts}
+            handleDelete={this.deleteContact}
+          ></ContactList>
+        )}
       </div>
     );
   }
