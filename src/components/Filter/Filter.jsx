@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Filter.module.css';
 import stylesApp from '../../components/App.module.css';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class Filter extends Component {
   render() {
@@ -24,5 +24,5 @@ class Filter extends Component {
 export default Filter;
 
 Filter.propTypes = {
-  value: propTypes.string,
+  value: PropTypes.string,
 };
